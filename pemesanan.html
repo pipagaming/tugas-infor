@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rumah Kado Rafira - Pemesanan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pemesanan</h1>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="pemesanan.html">Pemesanan</a>
+        <a href="profil.html">Profil</a>
+      </nav>
+    </header>
+
+    <main>
+      <form class="order-form" id="orderForm">
+        <label>Nama:</label>
+        <input type="text" name="nama" required />
+
+        <label>Email/WhatsApp:</label>
+        <input type="text" name="kontak" required />
+
+        <label>Produk:</label>
+        <select name="produk">
+          <option>Seragam Pramuka</option>
+          <option>Baret Pramuka</option>
+          <option>Kacu Pramuka</option>
+          <option>Tali Tambang</option>
+          <option>Ring</option>
+          <option>Sepatu</option>
+        </select>
+
+        <label>Catatan:</label>
+        <textarea name="catatan"></textarea>
+
+        <button type="submit">Kirim Pesanan</button>
+      </form>
+
+      <div id="notif" class="notif">✅ Pesanan Anda telah diterima!</div>
+
+      <script>
+        const form = document.getElementById("orderForm");
+        const notif = document.getElementById("notif");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          notif.style.display = "block";
+
+          setTimeout(() => {
+            notif.style.display = "none";
+          }, 1500);
+        });
+      </script>
+    </main>
+
+    <footer>
+      <p>
+        Nama: Firja | Email: rafirafamily1315@gmail.com | Instagram: @pir.aja_ |
+        Sumber AI: Copilot
+      </p>
+    </footer>
+  </body>
+</html>
