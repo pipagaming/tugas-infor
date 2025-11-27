@@ -47,7 +47,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url("images/toko.png") no-repeat center center/cover;
+  background: url("toko.png") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,3 +222,4 @@ footer {
 footer p {
   font-size: 0.9rem;
 }
+
